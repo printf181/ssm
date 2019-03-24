@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--构造方法注入=属性值-->
+    <bean id="stu" class="com.gyf.model.Student">
+        <!--相当于调用public Student(String username, String password)-->
+        <!--<constructor-arg name="username" value="0"></constructor-arg>-->
+        <!--<constructor-arg name="password" value="0"></constructor-arg>-->
+    </bean>
+    <!--<bean id="stu" class="com.gyf.model.Student">-->
+        <!--&lt;!&ndash;相当于调用public Student(String username, String password)&ndash;&gt;-->
+        <!--<constructor-arg index="0" value="gyf" type="java.lang.String"></constructor-arg>-->
+        <!--<constructor-arg index="1" value="123" type="java.lang.Integer"></constructor-arg>-->
+    <!--</bean>-->
+
+</beans>
